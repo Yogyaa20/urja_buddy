@@ -1,3 +1,4 @@
+
 import 'dart:convert';
 
 import 'package:hive_flutter/hive_flutter.dart';
@@ -7,7 +8,7 @@ class AIService {
   static const String _groqUrl = 'https://api.groq.com/openai/v1/chat/completions';
   static const String _groqModel = 'Llama-3.3-70b-versatile';
   static const String _groqApiKey =
-      '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';
+      REACT_APP_GROQ_API_KEY;
 
   Future<String> _callGroqChat({
     required String systemPrompt,
