@@ -7,7 +7,7 @@ class AIService {
       'https://api.groq.com/openai/v1/chat/completions';
   static const String _groqModel = 'llama-3.3-70b-versatile';
   static const String _groqApiKey =
-      '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';
+      REACT_APP_GROQ_API_KEY;
 
   Future<String> _callGroqChat({
     required String systemPrompt,
